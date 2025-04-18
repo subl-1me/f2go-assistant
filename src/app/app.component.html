@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistant - Revisión de Reservaciones</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.0.11/heroicons.min.js"></script>
+  </head>
+  <body class="bg-gray-50 font-sans flex h-screen">
+    <div class="w-64 bg-indigo-800 text-white flex flex-col fixed h-full">
+      <app-sidebar></app-sidebar>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-1 ml-64 overflow-auto">
+      <main class="p-6">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </body>
+</html>
