@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cargando...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        border-top: 4px solid #4f46e5;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 flex items-center justify-center h-screen">
+    <div class="text-center">
+      <div class="spinner mb-4 mx-auto"></div>
+      <h1 class="text-xl font-semibold text-gray-800">
+        Cargando F2GO Assistant...
+      </h1>
+      <p class="text-gray-600 mt-2" id="status-message">Por favor espere...</p>
+      <p class="text-red-500 text-sm mt-4 hidden" id="error-message"></p>
+    </div>
+  </body>
+</html>
