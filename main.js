@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require("electron/main");
 const path = require("node:path");
 
-function createWindow() {
+const createWindow = async () => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -10,8 +10,9 @@ function createWindow() {
     },
   });
 
-  win.loadURL("http://localhost:4200/");
-}
+  await win.loadFile(path.join(__dirname, "/src/loader.html"));
+  await win.loadURL("http://localhost:4200/");
+};
 
 app.whenReady().then(() => {
   createWindow();
