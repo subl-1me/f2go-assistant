@@ -1,0 +1,172 @@
+<!-- Encabezado -->
+<header class="bg-white shadow-sm p-4">
+  <div class="flex justify-between items-center">
+    <div>
+      <h1 class="text-2xl font-bold text-gray-800">
+        Bienvenido al Panel de Control
+      </h1>
+      <p class="text-gray-600">Resumen general del sistema</p>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="Buscar..."
+          class="pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+      </div>
+      <button class="p-2 text-gray-500 hover:text-gray-700">
+        <i class="fas fa-bell"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Content home  -->
+<main class="p-6">
+  <!-- Summary cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <!-- Today reservation -->
+    <div class="bg-white rounded-xl shadow-md p-6 card-hover transition-all">
+      <div class="flex items-center">
+        <div class="p-3 rounded-full bg-indigo-100 text-indigo-600 mr-4">
+          <i class="fas fa-calendar-check text-xl"></i>
+        </div>
+        <div>
+          <p class="text-gray-500">Reservaciones de hoy</p>
+          <h3 class="text-2xl font-bold">24</h3>
+        </div>
+      </div>
+      <div class="mt-4 pt-4 border-t border-gray-100">
+        <span class="text-green-500 text-sm"
+          ><i class="fas fa-arrow-up mr-1"></i> 12% vs ayer</span
+        >
+      </div>
+    </div>
+
+    <!-- Total in house -->
+    <div class="bg-white rounded-xl shadow-md p-6 card-hover transition-all">
+      <div class="flex items-center">
+        <div class="p-3 rounded-full bg-teal-100 text-teal-600 mr-4">
+          <i class="fas fa-bed text-xl"></i>
+        </div>
+        <div>
+          <p class="text-gray-500">Ocupación actual</p>
+          <h3 class="text-2xl font-bold">78%</h3>
+        </div>
+      </div>
+      <div class="mt-4 pt-4 border-t border-gray-100">
+        <span class="text-green-500 text-sm"
+          ><i class="fas fa-arrow-up mr-1"></i> 5% vs semana pasada</span
+        >
+      </div>
+    </div>
+
+    <!-- Pending to arrive -->
+    <div class="bg-white rounded-xl shadow-md p-6 card-hover transition-all">
+      <div class="flex items-center">
+        <div class="p-3 rounded-full bg-teal-100 text-teal-600 mr-4">
+          <i class="fas fa-bed text-xl"></i>
+        </div>
+        <div>
+          <p class="text-gray-500">Llegadas pendientes</p>
+          <h3 class="text-2xl font-bold">10</h3>
+        </div>
+      </div>
+      <div class="mt-4 pt-4 border-t border-gray-100">
+        <span class="text-indigo-600 hover:text-indigo-800 text-sm float-end"
+          >Ver detalles<i class="fas fa-chevron-right ml-1"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- Disponibility -->
+    <div class="bg-white rounded-xl shadow-md p-6 card-hover transition-all">
+      <div class="flex items-center">
+        <div class="p-3 rounded-full bg-green-100 text-green-600 mr-4"></div>
+        <div>
+          <p class="text-gray-500">Disponibilidad</p>
+          <i class="fas fa-bed ml-1"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gráfico y últimas reservaciones -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Gráfico de ocupación -->
+    <div class="bg-white rounded-xl shadow-md p-6 lg:col-span-2">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold">Ocupación semanal</h2>
+        <select
+          class="border rounded-lg px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          <option>Esta semana</option>
+          <option>Semana pasada</option>
+          <option>Este mes</option>
+        </select>
+      </div>
+      <!-- Espacio para gráfico (simulado) -->
+      <div
+        class="bg-gray-100 rounded-lg h-64 flex items-center justify-center text-gray-400"
+      >
+        <i class="fas fa-chart-line text-4xl mr-3"></i>
+        <span>Gráfico de ocupación</span>
+      </div>
+    </div>
+
+    <!-- Last reservations -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-lg font-semibold mb-4">
+        Últimas reservaciones <i class="fas fa-refresh text-sm ml-1"></i>
+      </h2>
+      <div class="space-y-4">
+        <div class="flex items-center p-3 border-b border-gray-100">
+          <div class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3">
+            <i class="fas fa-user"></i>
+          </div>
+          <div>
+            <p class="font-medium">Ana Pérez</p>
+            <p class="text-sm text-gray-500">Suite Presidencial - Hoy 15:00</p>
+          </div>
+        </div>
+        <div class="flex items-center p-3 border-b border-gray-100">
+          <div class="bg-teal-100 text-teal-600 p-2 rounded-full mr-3">
+            <i class="fas fa-user"></i>
+          </div>
+          <div>
+            <p class="font-medium">Carlos López</p>
+            <p class="text-sm text-gray-500">
+              Habitación Deluxe - Mañana 10:00
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-3 border-b border-gray-100">
+          <div class="bg-amber-100 text-amber-600 p-2 rounded-full mr-3">
+            <i class="fas fa-user"></i>
+          </div>
+          <div>
+            <p class="font-medium">Sofía Gómez</p>
+            <p class="text-sm text-gray-500">Habitación Doble - 22/04 14:00</p>
+          </div>
+        </div>
+        <div class="flex items-center p-3">
+          <div class="bg-green-100 text-green-600 p-2 rounded-full mr-3">
+            <i class="fas fa-user"></i>
+          </div>
+          <div>
+            <p class="font-medium">Javier Vargas</p>
+            <p class="text-sm text-gray-500">Suite Ejecutiva - 23/04 18:00</p>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="block text-center mt-4 text-indigo-600 hover:text-indigo-800"
+      >
+        Ver todas <i class="fas fa-arrow-right ml-1"></i>
+      </a>
+    </div>
+  </div>
+</main>
