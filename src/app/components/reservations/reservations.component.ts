@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { CurrentStatusComponent } from './current-status/current-status.component';
+import { CheckerComponent } from './checker/checker.component';
 
 @Component({
   selector: 'app-reservations',
-  imports: [NgIf, CurrentStatusComponent],
+  imports: [NgIf, CurrentStatusComponent, CheckerComponent],
   templateUrl: './reservations.component.html',
   styleUrl: './reservations.component.css',
 })
