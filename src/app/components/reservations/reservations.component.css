@@ -1,6 +1,4 @@
 .card-hover:hover {
-  cursor: pointer;
-  transform: translateY(-2px);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
@@ -10,5 +8,6 @@
 }
 
 .card-title {
+  cursor: pointer;
   color: #234ac9;
 }
