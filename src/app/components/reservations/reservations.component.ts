@@ -3,10 +3,17 @@ import { NgIf } from '@angular/common';
 import { CurrentStatusComponent } from './current-status/current-status.component';
 import { CheckerComponent } from './checker/checker.component';
 import { RoutingsComponent } from './routings/routings.component';
+import { AutoAssignRoomsComponent } from './auto-assign-rooms/auto-assign-rooms.component';
 
 @Component({
   selector: 'app-reservations',
-  imports: [NgIf, CurrentStatusComponent, CheckerComponent, RoutingsComponent],
+  imports: [
+    NgIf,
+    CurrentStatusComponent,
+    CheckerComponent,
+    RoutingsComponent,
+    AutoAssignRoomsComponent,
+  ],
   templateUrl: './reservations.component.html',
   styleUrl: './reservations.component.css',
 })
