@@ -1,0 +1,165 @@
+<!-- check component -->
+<div class="auto-assign-section">
+  <!-- <div class="mb-6 bg-blue-50 p-4 rounded-xl border border-blue-100">
+    <div
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+    >
+      <div>
+        <h4 class="font-medium text-blue-600 mb-1">Filtro automático</h4>
+        <p class="text-sm text-gray-600">
+          Solo se mostrarán reservaciones pagadas sin habitación asignada
+        </p>
+      </div>
+      <button
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl text-sm font-medium transition-colors whitespace-nowrap"
+      >
+        <i class="fas fa-sync-alt mr-2"></i> Actualizar lista
+      </button>
+    </div>
+  </div> -->
+
+  <!-- Reservatino list -->
+  <div class="border border-gray-200 rounded-xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              <input
+                type="checkbox"
+                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500 h-4 w-4"
+              />
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Reserva
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Huésped
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Estatus Pago
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <input
+                type="checkbox"
+                checked
+                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500 h-4 w-4"
+              />
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#234223</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-gray-900">Laura Sánchez</div>
+              <div class="text-xs text-gray-500">Sencilla</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-2 py-1 text-xs rounded-full bg-green-50 text-green-600"
+              >
+                <i class="fas fa-check-circle mr-1"></i> Pagado
+              </span>
+            </td>
+          </tr>
+
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <input
+                type="checkbox"
+                checked
+                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500 h-4 w-4"
+              />
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#231244</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-gray-900">
+                Roberto Jiménez
+              </div>
+              <div class="text-xs text-gray-500">Doble</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-2 py-1 text-xs rounded-full bg-green-50 text-green-600"
+              >
+                <i class="fas fa-check-circle mr-1"></i> Pagado
+              </span>
+            </td>
+          </tr>
+
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <input
+                type="checkbox"
+                class="rounded border-gray-300 text-blue-600 focus:ring-blue-500 h-4 w-4"
+              />
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#12778</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-gray-900">
+                Mónica Vázquez
+              </div>
+              <div class="text-xs text-gray-500">Suite</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-2 py-1 text-xs rounded-full bg-green-50 text-green-600"
+              >
+                <i class="fas fa-check-circle mr-1"></i> Pagado
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pie de tabla -->
+    <div
+      class="bg-gray-50 px-6 py-4 border-t border-gray-200 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+    >
+      <div class="text-sm text-gray-500">
+        <span class="font-medium">2</span> reservaciones serán auto-asignadas
+      </div>
+      <div class="flex space-x-3">
+        <button
+          class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 py-2 px-6 rounded-xl text-sm font-medium transition-colors"
+        >
+          <i class="fas fa-times mr-2"></i> Cancelar
+        </button>
+        <button
+          class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl text-sm font-medium transition-colors"
+        >
+          <i class="fas fa-check-circle mr-2"></i> Confirmar Auto-asignación
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nota importante -->
+  <div
+    class="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-sm text-yellow-700"
+  >
+    <i class="fas fa-exclamation-circle mr-2"></i> El sistema asignará
+    habitaciones disponibles aleatorias del tipo correspondiente a cada
+    reservación.
+  </div>
+</div>
