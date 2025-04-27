@@ -1,0 +1,110 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-50">
+  <!-- Card Container -->
+  <div
+    class="bg-white rounded-xl shadow-md p-8 w-full max-w-md card-hover transition-all"
+  >
+    <!-- Logo/Header -->
+    <div class="flex flex-col items-center mb-8">
+      <div class="p-4 rounded-full bg-card-icon mb-4">
+        <i class="fas fa-robot text-3xl text-blue-600"></i>
+      </div>
+      <h2 class="text-2xl font-bold text-blue-600">Front2Go Assistant</h2>
+      <p class="text-sm text-gray-500 mt-1">
+        Ingrese sus credenciales para continuar
+      </p>
+    </div>
+
+    <!-- login form -->
+    <form class="space-y-5">
+      <!-- user field -->
+      <div>
+        <label
+          for="username"
+          class="block text-sm font-medium text-gray-700 mb-1"
+          >Usuario de Front2Go</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <i class="fas fa-user text-gray-400"></i>
+          </div>
+          <input
+            type="text"
+            id="username"
+            placeholder="Ingrese su usuario"
+            class="w-full pl-10 pr-3 py-3 rounded-xl border border-gray-200 focus:ring-blue-500 focus:border-blue-500 text-sm"
+          />
+        </div>
+      </div>
+
+      <!-- Password field -->
+      <div>
+        <label
+          for="password"
+          class="block text-sm font-medium text-gray-700 mb-1"
+          >Contraseña</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <i class="fas fa-lock text-gray-400"></i>
+          </div>
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingrese su contraseña"
+            class="w-full pl-10 pr-3 py-3 rounded-xl border border-gray-200 focus:ring-blue-500 focus:border-blue-500 text-sm"
+          />
+          <button
+            type="button"
+            class="absolute inset-y-0 right-0 pr-3 flex items-center"
+          >
+            <i class="fas fa-eye-slash text-gray-400 hover:text-blue-600"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Remember password -->
+      <!-- <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input
+            id="remember"
+            type="checkbox"
+            class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          />
+          <label for="remember" class="ml-2 block text-sm text-gray-700"
+            >Recordar sesión</label
+          >
+        </div>
+        <a href="#" class="text-sm text-blue-600 hover:text-blue-800"
+          >¿Olvidó su contraseña?</a
+        >
+      </div> -->
+
+      <!-- Login button -->
+      <button
+        type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      >
+        <i class="fas fa-sign-in-alt mr-2"></i> Iniciar Sesión
+      </button>
+
+      <!-- Divider -->
+      <div class="relative">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-gray-200"></div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <div class="mt-6 text-center text-sm text-gray-500">
+      <p>Si no tiene una cuenta para accesar consulte con un encargado.</p>
+      <p class="mt-2 text-xs">
+        © 2023 Front2Go Assistant. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</div>

@@ -7,7 +7,7 @@
   </head>
   <body class="bg-gray-50 font-sans flex h-screen">
     <!-- Sidebar -->
-    <div class="hidden md:flex md:flex-shrink-0">
+    <div class="hidden md:flex md:flex-shrink-0" *ngIf="isAuth">
       <app-sidebar></app-sidebar>
     </div>
 
