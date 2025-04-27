@@ -1,0 +1,369 @@
+<!-- Header -->
+<header class="bg-white shadow-sm p-4">
+  <div class="flex justify-between items-center">
+    <div>
+      <h1 class="text-2xl font-bold text-gray-800">Facturaciones</h1>
+      <p class="text-gray-600">
+        Aquí podrás realizar facturas automáticas o manuales con la información
+        recopilada durante las revisiones.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- Content home  -->
+<main class="p-6">
+  <!-- Invoice mode -->
+  <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+    <div class="flex flex-col md:flex-row md:items-center gap-4">
+      <div class="flex-1">
+        <h4 class="font-medium text-blue-600 mb-1">Modo de Facturación</h4>
+        <p class="text-sm text-gray-600">
+          Seleccione el método para procesar las facturas
+        </p>
+      </div>
+      <div class="flex space-x-3">
+        <button
+          class="bg-blue-600 text-white py-2 px-4 rounded-xl text-sm font-medium"
+        >
+          <i class="fas fa-robot mr-2"></i> Automático
+        </button>
+        <button
+          class="bg-white text-blue-600 border border-blue-200 py-2 px-4 rounded-xl text-sm font-medium hover:bg-blue-50"
+        >
+          <i class="fas fa-user-edit mr-2"></i> Manual
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation list -->
+  <div class="border border-gray-200 rounded-xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              <button
+                class="text-blue-600 hover:text-blue-800 p-1.5 rounded-full hover:bg-blue-100"
+              >
+                <i class="fas fa-check text-lg"></i>
+              </button>
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Reserva
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Huésped
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Habitación
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Datos Facturación
+            </th>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-xs font-medium text-blue-600 uppercase tracking-wider"
+            >
+              Folio sugerido
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <!-- Data example -->
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="text-blue-600 hover:text-blue-800 p-1.5 rounded-full hover:bg-blue-100"
+              >
+                <i class="fas fa-check-circle text-lg"></i>
+              </button>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#124455</div>
+            </td>
+            <td class="px-6 py-4">
+              <div class="text-sm font-medium text-gray-900">
+                Carlos Mendoza
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >215</span
+              >
+            </td>
+            <td class="px-6 py-4">
+              <div class="text-sm text-gray-900">
+                <div class="flex items-center">
+                  <i class="fas fa-id-card mr-2 text-blue-500"></i>
+                  MENK800101ABC
+                </div>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-building mr-2 text-blue-500"></i> Tech
+                  Solutions
+                </div>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-envelope mr-2 text-blue-500"></i>
+                  contabilidad-techsolutions.com
+                </div>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-info-circle mr-2 text-blue-500"></i>
+
+                  Gastos en general ~ Nota:
+                </div>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >1</span
+              >
+              <span
+                class="px-3 ml-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >Saldo: $0</span
+              >
+            </td>
+          </tr>
+
+          <!-- Data example -->
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="text-blue-600 hover:text-blue-800 p-1.5 rounded-full hover:bg-blue-100"
+              >
+                <i class="fas fa-check-circle text-lg"></i>
+              </button>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#124455</div>
+            </td>
+            <td class="px-6 py-4">
+              <div class="text-sm font-medium text-gray-900">
+                Carlos Mendoza
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >215</span
+              >
+            </td>
+            <td class="px-6 py-4">
+              <div class="text-sm text-gray-900">
+                <div class="flex items-center">
+                  <i class="fas fa-id-card mr-2 text-blue-500"></i>
+                  CTS160922QL0
+                </div>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-building mr-2 text-blue-500"></i> Tech
+                  Corporate Travel Services
+                </div>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-envelope mr-2 text-blue-500"></i>
+                  contabilidad-cts.com
+                </div>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-info-circle mr-2 text-blue-500"></i>
+
+                  Gastos en general ~ Nota: 122323
+                </div>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >1</span
+              >
+              <span
+                class="px-3 ml-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >Saldo: $0</span
+              >
+            </td>
+          </tr>
+
+          <!-- Generic example -->
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="text-blue-600 hover:text-blue-800 p-1.5 rounded-full hover:bg-blue-100"
+              >
+                <i class="fas fa-check-circle text-lg"></i>
+              </button>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#898989</div>
+            </td>
+            <td class="px-6 py-4">
+              <div class="text-sm font-medium text-gray-900">Ana López</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >312</span
+              >
+            </td>
+            <td class="px-6 py-4">
+              <span class="text-sm text-gray-500 italic">Factura genérica</span>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >1</span
+              >
+              <span
+                class="px-3 ml-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >Saldo: $0</span
+              >
+            </td>
+          </tr>
+
+          <!-- No data found example -->
+          <tr class="hover:bg-blue-50 transition-colors">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="text-blue-200 hover:text-blue-800 p-1.5 rounded-full hover:bg-blue-100"
+              >
+                <i class="fas fa-check-circle text-lg"></i>
+              </button>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-blue-600">#66554432</div>
+            </td>
+            <td class="px-6 py-4">
+              <div class="text-sm font-medium text-gray-900">
+                Roberto Jiménez
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >418</span
+              >
+            </td>
+            <td class="px-6 py-4">
+              <button
+                class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center"
+              >
+                <i class="fas fa-plus-circle mr-2"></i> Agregar datos fiscales
+              </button>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >1</span
+              >
+              <span
+                class="px-3 ml-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >Saldo: $0</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Manual -->
+    <!-- <div
+      class="bg-gray-50 p-6 border-t border-gray-200 hidden"
+      id="billingForm"
+    >
+      <h4 class="font-medium text-blue-600 mb-4">Ingresar Datos Fiscales</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >RFC</label
+          >
+          <input
+            type="text"
+            class="w-full rounded-xl border border-gray-300 p-2.5 text-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Razón Social</label
+          >
+          <input
+            type="text"
+            class="w-full rounded-xl border border-gray-300 p-2.5 text-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Correo Electrónico</label
+          >
+          <input
+            type="email"
+            class="w-full rounded-xl border border-gray-300 p-2.5 text-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Método de Envío</label
+          >
+          <select
+            class="w-full rounded-xl border border-gray-300 p-2.5 text-sm focus:ring-blue-500 focus:border-blue-500"
+          >
+            <option>Email</option>
+            <option>Descarga PDF</option>
+            <option>Ambos</option>
+          </select>
+        </div>
+      </div>
+      <div class="mt-4 flex justify-end space-x-3">
+        <button
+          class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 py-2 px-6 rounded-xl text-sm font-medium transition-colors"
+        >
+          Cancelar
+        </button>
+        <button
+          class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl text-sm font-medium transition-colors"
+        >
+          Guardar Datos
+        </button>
+      </div>
+    </div> -->
+
+    <!-- Acciones globales -->
+    <div
+      class="bg-gray-50 px-6 py-4 border-t border-gray-200 flex flex-col md:flex-row md:items-center md:justify-between gap-4 float-end"
+    >
+      <div class="flex space-x-3">
+        <button
+          class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 py-2 px-6 rounded-xl text-sm font-medium transition-colors"
+        >
+          <i class="fas fa-file-export mr-2"></i> Exportar Listado
+        </button>
+        <button
+          class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl text-sm font-medium transition-colors"
+        >
+          <i class="fas fa-paper-plane mr-2"></i> Enviar Todas
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Note  -->
+  <!-- <div
+    class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-700"
+  >
+    <i class="fas fa-info-circle mr-2"></i> Las facturas marcadas como genéricas
+    se emitirán a nombre de "PÚBLICO EN GENERAL" con RFC genérico.
+  </div> -->
+</main>
